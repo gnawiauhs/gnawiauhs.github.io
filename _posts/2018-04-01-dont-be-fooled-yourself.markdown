@@ -4,7 +4,7 @@ title:      "不要再自愚自乐"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2018-04-01 00:00:00
 author:     "Vinst"
-header-img: "img/post-head/20180401.jpg"
+header-img: "img/post-head/20180401-fools-day.jpg"
 catalog: true
 tags:
     - 闲话
