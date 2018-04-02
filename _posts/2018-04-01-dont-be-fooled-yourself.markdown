@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "不要再自愚自乐"
-subtitle:   " \"Hello World, Hello Blog\""
+subtitle:   " \"Don't fool yourself again\""
 date:       2018-04-01 00:00:00
 author:     "Vinst"
 header-img: "img/post-head/20180401-fools-day.jpg"
