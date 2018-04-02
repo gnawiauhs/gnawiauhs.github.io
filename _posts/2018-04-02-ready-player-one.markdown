@@ -5,7 +5,6 @@ subtitle:   " \"A brief review of READY PLAYER ONE\""
 date:       2018-04-02 12:44:43
 author:     "Vinst"
 header-img: "img/post-head/20180402-ready-player-one.jpg"
-catalog: true
 tags:
     - 影评
 ---

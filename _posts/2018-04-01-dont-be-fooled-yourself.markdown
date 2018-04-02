@@ -5,7 +5,6 @@ subtitle:   " \"Don't fool yourself again\""
 date:       2018-04-01 00:00:00
 author:     "Vinst"
 header-img: "img/post-head/20180401-fools-day.jpg"
-catalog: true
 tags:
     - 闲话
 ---
