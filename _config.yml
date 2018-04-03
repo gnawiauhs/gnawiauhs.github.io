@@ -74,7 +74,7 @@ sidebar-avatar: /img/avatar-vin.jpg      # use absolute URL, seeing it's used in
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 
 
@@ -91,3 +91,9 @@ friends: [
         href: "http://www.ruanyifeng.com/blog/"
     }
 ]
+
+# Leancloud
+leancloud:
+  enable: true
+  app_id: XCPBwwmyWzQ654pNMIrbVuVg-gzGzoHsz
+  app_key: A0g7FbpLwMiGtkdxoGL3WW4b
