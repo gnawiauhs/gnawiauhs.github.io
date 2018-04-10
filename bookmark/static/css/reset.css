@@ -1,0 +1,16 @@
+* {
+  box-sizing: content-box;
+  margin:0;
+  padding:0;
+}
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+a:hover{
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
