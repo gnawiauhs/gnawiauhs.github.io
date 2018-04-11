@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "Vinst Blog",
+  "short_name": "Vinst Blog",
+  "description": "A Front-end Engineer.",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
