@@ -86,10 +86,30 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        # title: "阮一峰博客",
-        # href: "http://www.ruanyifeng.com/blog/"
-    }
+  {
+    title: "NCZOnline",
+    href: "https://www.nczonline.net/"
+  },
+  {
+    title: "Coderops",
+    href: "https://tympanus.net/codrops/"
+  },
+  {
+    title: "Meyerweb",
+    href: "https://meyerweb.com/"
+  },
+  {
+    title: "QuirksBlog",
+    href: "https://www.quirksmode.org/blog/"
+  },
+  {
+    title: "Paul Irish",
+    href: "https://www.paulirish.com/"
+  },
+  {
+    title: "Addy Osmani",
+    href: "https://addyosmani.com/blog/"
+  }
 ]
 
 # Leancloud
