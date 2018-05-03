@@ -99,11 +99,11 @@ $ vue init webpack test
   No, I will handle that myself
 # 创建项目后是否自动安装项目依赖
 ```
-![vue-img](http://localhost:4000/img/post-img/vue-node/vue-node-1.png)
+![vue-img](http://www.hansmkiii.com/img/post-img/vue-node/vue-node-1.png)
 项目创建完成，按照提示步骤安装依赖（如果之前选择了手动安装）并运行。
 
 浏览器自动打开默认页面
-![vue-img](http://localhost:4000/img/post-img/vue-node/vue-node-3.png)
+![vue-img](http://www.hansmkiii.com/img/post-img/vue-node/vue-node-3.png)
 
 如此，我们使用vue-cli脚手架和webpack创建的vue项目就完成了。
 
