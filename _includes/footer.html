@@ -298,7 +298,12 @@
             $en.classList.remove("active");
         }
         // interop with catalog 
-        if ("{{ page.catalog }}") generateCatalog(".catalog-body");
+        /*if ("{{ page.catalog }}") generateCatalog(".catalog-body");*/
+        if ("{{ page.multilingual }}") {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
     }
 
     // handle select change
