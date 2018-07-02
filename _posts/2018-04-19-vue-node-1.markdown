@@ -7,7 +7,6 @@ author:     "Vinst"
 header-img: "img/post-head/vue-head.jpg"
 tags:
     - VUE
-    - 笔记
 ---
 > 以下操作均在 windows7 系统下进行
 
