@@ -318,8 +318,9 @@ window.onoffline=function(){
     alert('断网了')
 }
 ```
-浏览器支持情况：
-事件     | Chrome | IE | Firefox | Safari | Opera
--------- | ------ | -- | ------- |  ----- | ---
+浏览器支持情况： 
+ 
+事件 | Chrome | IE | Firefox | Safari | Opera
+ :-: | :-: | :-: | :-: | :-: | :-:
 ononline | 不支持 | IE8（IE11 已废弃）| 3.0 | 不支持 | 不支持
 
