@@ -11,7 +11,7 @@ tags:
 ---
 > 上一篇[《前端必会的HTML5（一）](http://www.hansmkiii.com/2018/06/29/html5-node-1/)》
 
-## 1、获取地理定位
+## 1、获取地理定位(不推荐)
 ```javascript
 window.navigator.geolocation.getCurrentPosition(function(position){
     console.log(position)
@@ -25,26 +25,29 @@ position.coords.latitude  // 经度
 position.coords.longitude // 纬度
 ```
 > 注：若浏览器提示“获取您的位置”，请点击允许；
-如果仍然报错"Network location provider at 'https://www.googleapis.com/' : No response received."，请科学上网。
+如果仍然报错"Network location provider at 'https://www.googleapis.com/' : No response received."，请 **科学上网**。
 
 ## 2、存储
 
 随着互联网的快速发展，基于网页的应用越来越普遍，同时也变得越来越复杂，为了满足各种各样的需求，回经常性在本地存储大量的数据，传统方式我们以document.cookie来进行存储，但是由于其存储大小只有4K左右，并且解析也相当的复杂，给开发带来诸多不便，HTML5规范则提出解决方案，使用sessionStorage和localStorage存储数据。
 
-**HTML5存储的特性：**  
+**HTML5存储的特性：**
+
 1、设置，读取方法  
 2、容量较大  
-3、能存储字符串  
+3、能存储字符串
 
-**sessionStorage:**  
+**sessionStorage:**
+
 1、关闭浏览器窗口生命周期结束  
 2、在同一个窗口下数据可以共享  
-3、容量约5M  
+3、容量约5M
 
-**localStorage:**  
+**localStorage:**
+
 1、永久有效，除非手动删除  
 2、可以多窗口共享  
-3、容量约20M  
+3、容量约20M
 
 ```javascript
 // 设置session：属性名字，值
@@ -68,7 +71,7 @@ window.localStorage.clear();
 
 ## 3、Canvas
 
-### 3.1 画线
+**公共部分**
 ```html
 <canvas id="canvas"></canvas>
 ```
@@ -77,6 +80,15 @@ window.localStorage.clear();
 var c = docuemnt.querySelector('#canvas');
 // 获取绘制对象
 var ctx = c.getContext('2d')
+/* 开始绘画步骤*/
+
+/* 结束绘画步骤*/
+// 绘制
+ctx.stroke();
+```
+
+### 画线
+```javascript
 // 开始的位置（横纵坐标）
 ctx.moveTo(100,100);
 // 结束的位置
@@ -85,19 +97,17 @@ ctx.lineTo(300,100);
 ctx.strokeStyle = "red";
 // 设置线的宽度
 ctx.lineWidth = 10
-// 绘制
-ctx.stroke();
 ```
 若重复上面步骤再画一条线，两次绘制会存在重复绘制的情况：
 * 解决方式1：只调用一次`stroke()`绘制方法
 * 解决方式2：绘制后使用`beginPath()`重置路径
 
-### 3.2 折角样式
+### 折角样式
 画线连接处样式：
 ```javascript
-ctx.lineJion() // round圆角| bevel平角 | biter尖角（默认）
+ctx.lineJion='round' // round圆角| bevel平角 | biter尖角（默认）
 ```
-### 3.3 闭合路径
+### 闭合路径
 ```javascript
 ctx.moveTo(100,100);
 ctx.lineTo(100,300);
@@ -106,7 +116,7 @@ ctx.lineTo(400,300);
 ctx.closePath(); //闭合路径，画图差最后一步时使用
 ```
 
-### 3.4 渐变
+### 渐变
 
 **线性渐变**
 ```javascript
@@ -142,10 +152,18 @@ ctx.closePath();
 ctx.fill();
 ```
 
-### 3.5 非零环绕
-顺时针方向为1，逆时针方向为-1。颜色填充方向之和为0的区域。
+### 非零环绕
+> 原理：假设以最内侧图形内部某一点为起点，向外画一条射线，射线以起点为轴，顺时针扫描图形。绘制图形过程中，与射线移动方向相同的框线赋值为1，方向相反的框线赋值为 -1，从射线起点到终点做加法运算，和不为0的范围则填充颜色。此为非零环绕。
+
 ```javascript
-//外层逆时针
+// 外层顺时针
+ctx.moveTo(50,50);
+ctx.lineTo(350,50);
+ctx.lineTo(350,350);
+ctx.lineTo(50,350);
+ctx.closePath();
+
+// 中层逆时针
 ctx.moveTo(100,100);
 ctx.lineTo(100,300);
 ctx.lineTo(300,300);
@@ -158,9 +176,17 @@ ctx.lineTo(250,150);
 ctx.lineTo(250,250);
 ctx.lineTo(150,250);
 ctx.closePath();
-```
 
-### 3.6 虚线
+ctx.lineWidth = 1;
+ctx.strokeStyle = "red";
+ctx.fillStyle = "green";
+
+ctx.fill();
+ctx.stroke();
+```
+[点击此处](https://codepen.io/vinstweb/pen/gKNRPg) 查看效果
+
+### 虚线
 ```javascript
 ctx.moveTo(100,50);
 ctx.lineTo(400,50);
@@ -169,7 +195,7 @@ ctx.setLineDash([20,20]);
 ctx.stroke();
 ```
 
-### 3.7 动态的矩形
+### 动态的矩形
 ```javascript
 var x = 0;
 var step = 5;
@@ -186,11 +212,12 @@ setInterval(function(){
     } else if(x<=0) {
         i = 1;
     }
-})
+},21)
 
 ```
+[点击此处](https://codepen.io/vinstweb/pen/ParjBO) 查看效果
 
-### 3.8 绘制文本
+### 绘制文本
 
 ```javascript
 // 绘制文本：像素 和 字体
@@ -210,7 +237,7 @@ ctx.stockeText("全网最帅", 300, 200);
 ctx.fileText("全网最帅"， 300， 200);
 ```
 
-### 3.9 绘制图片
+### 绘制图片
 
 ```javascript
 var img = document.createElement("img");
@@ -225,14 +252,14 @@ img.onload = function(){
 }
 ```
 
-### 3.10 绘制弧度
+### 绘制弧度
 
 ```
 ctx.arc(200,150,Math.PI/2, 2*Math.PI, true)
 // true 表示顺时针，false 表示逆时针
 ```
 
-### 3.11 平移
+### 平移
 
 ```
 ctx.moveTo(0,0);
@@ -241,5 +268,3 @@ ctx.translate(0, 100);
 ```
 
 > 旋转（rotate）和缩放(scale)的用法与平移相同。[点击此处](http://www.w3school.com.cn/tags/html_ref_canvas.asp) 查看更多用法。
-
-
