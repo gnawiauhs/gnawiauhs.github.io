@@ -8,6 +8,7 @@ header-img: "img/post-head/html5-node.jpg"
 catalog:    true
 tags:
     - HTML5
+    - 学习笔记
 ---
 > 上一篇[《前端必会的HTML5（一）](http://www.hansmkiii.com/2018/06/29/html5-node-1/)》
 

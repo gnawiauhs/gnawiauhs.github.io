@@ -8,6 +8,7 @@ header-img: "img/post-head/html5-node.jpg"
 catalog:    true
 tags:
     - HTML5
+    - 学习笔记
 ---
 
 ## HTML的诞生
