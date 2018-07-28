@@ -4,8 +4,8 @@ SEOTitle: Vinst Blog
 header-img: img/home-bg.jpg
 email: vinstweb@163.com
 description: "前端工程师个人博客 | 分享前端、日常、心情的地方 | 这里是vinst的个人博客。"
-keyword: "vinstweb, vin, hansmkiii, github, WS, Vinst的博客, Vinst Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "http://www.hansmkiii.com"              # your host, for absolute URL
+keyword: "vinstweb, vin, hansmkiii, github, WS, Vinst的博客, Vinst Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端"
+url: "http://hansmkiii.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
