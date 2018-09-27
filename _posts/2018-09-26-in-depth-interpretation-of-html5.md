@@ -397,3 +397,4 @@ window.localStorage.clear();
 
 ### 2.7 其他
 
+关于多媒体和canvas的应用，会在新文章中单独讲解，敬请期待……
