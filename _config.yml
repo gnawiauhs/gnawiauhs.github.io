@@ -117,6 +117,6 @@ friends: [
 
 # Leancloud
 leancloud:
-  enable: true
+  enable: false
   app_id: XCPBwwmyWzQ654pNMIrbVuVg-gzGzoHsz
   app_key: A0g7FbpLwMiGtkdxoGL3WW4b
