@@ -28,6 +28,6 @@ tags:
 记住，一个RUL是一个资源的定位符。RUI是资源的标识符，它可能恰好是一个定位符。希望这能帮助你弄清我们使用的一些术语。
 
 > 作者：Milecia McG  
-> 原文：[https://dev.to/flippedcoding/what-is-the-difference-between-a-uri-and-a-url-4455](https://dev.to/flippedcoding/what-is-the-difference-between-a-uri-and-a-url-4455)
+> 原文：[https://dev.to/flippedcoding/what-is-the-difference-between-a-uri-and-a-url-4455](https://dev.to/flippedcoding/what-is-the-difference-between-a-uri-and-a-url-4455)  
 > 声明：本文翻译仅供学习用途，如果有侵权行为会立即删除处理。  
 > Disclaimer: This translation is for learning purposes only, and if there is any infringement, it will be deleted immediately.
