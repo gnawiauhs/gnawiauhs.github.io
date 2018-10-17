@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "[译文] URI和URL有什么区别？"
+title:      "[译] URI和URL有什么区别？"
 subtitle:   "What Is The Difference Between A URI And A URL?"
 date:       2018-10-17 14:17:00
 author:     "Vinst"
