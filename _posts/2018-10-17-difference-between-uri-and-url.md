@@ -4,7 +4,7 @@ title:      "[译文] URI和URL有什么区别？"
 subtitle:   "What Is The Difference Between A URI And A URL?"
 date:       2018-10-17 14:17:00
 author:     "Vinst"
-header-img: "img/post-head/20171017post/url_uri_head.jpg"
+header-img: "img/post-head/20181017post/url_uri_head.jpg"
 catalog:    true
 tags:
 
@@ -19,7 +19,7 @@ tags:
 这两者大多数混淆是因为它们之间的关联性。你看，一个URI可以是一个名称、定位符或者两者兼有的在线资源，而URL只是其中的定位符。URL是URI的一个子集。那就说明，所有URL都是URI，但是反过来则不成立。
 
 不是所有URI都是URL，因为一个URI可能是一个名称而非定位符。这里有一张图表示两者的不同：
-![URL和RUI的关系图](img/post-head/20171017post/j4bka41nypm4do1f3e5b.jpg)
+![URL和RUI的关系图](img/post-head/20181017post/j4bka41nypm4do1f3e5b.jpg)
 
 你的名字可能是一个URI，因为它可以识别你，但是它不可能是一个URL，因为它无法帮助任何人找到你的位置。另一方面，你的地址既是一个URI，也是一个URL，因为它可以识别你，也可以提供你的位置。
 
